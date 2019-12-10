@@ -1,0 +1,2013 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Consolas'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    lines = [*self._get_lines(*args, data=data, **kwargs)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;C:\Users\Aayush\Anaconda3\lib\site-packages\matplotlib\axes\_base.py&quot;</span>, line <span style=" color:#006400;">225</span>, in <span style=" color:#9400d3;">__call__</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    yield from self._plot_args(this, kwargs)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;C:\Users\Aayush\Anaconda3\lib\site-packages\matplotlib\axes\_base.py&quot;</span>, line <span style=" color:#006400;">391</span>, in <span style=" color:#9400d3;">_plot_args</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    x, y = self._xy_from_xy(x, y)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  File </span><span style=" color:#00ff00;">&quot;C:\Users\Aayush\Anaconda3\lib\site-packages\matplotlib\axes\_base.py&quot;</span><span style=" color:#00ffff;">, line </span><span style=" color:#00ff00;">270</span><span style=" color:#00ffff;">, in </span><span style=" color:#ff00ff;">_xy_from_xy</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    &quot;have shapes {} and {}&quot;.format(x.shape, y.shape))</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">ValueError:</span> x and y must have same first dimension, but have shapes (10,) and (9,)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+nHNnzpxx69evd+vWrXN//etfyzBp8eWzF0NDQ27NmjXuq6++cs459/nnn5dj
+1KLLZy9+/etfuzfffNM559yxY8fcDTfcUIZJi+/AgQPub3/7m2toaJjz/B/+
+8Ad33333ucnJSXfw4EH385//PK/HLeorfD6WYVo+e9Hc3KwlS5ZIkpqampTN
+ZssxatHlsxeStH37dm3btk1XX311GaYsjXz2YteuXWpvb5/6zbeqqqpyjFp0
++exFIBDQmTNnJEmnT5+e9Z6gy8Wdd975ve9lSiaT2rRpkwKBgJqamvT111/r
+1KlTvo9b1ODP9bEMuVzukmu++7EMl5t89uK7uru7df/995ditJLLZy+OHj2q
+kZERPfjgg6Uer6Ty2YuhoSENDQ3pjjvuUFNTk/r7+0s9Zknksxc7duzQ7t27
+FQwG9cADD2jnzp2lHvMHYb49+R/fj1YoxFyv1Bf6sQw/dvP5OXfv3q1UKqUD
+Bw4Ue6yy8NuLyclJbd26Ve+9914JpyqPfP5eXLx4UZlMRvv371c2m9X69es1
+ODioa665plRjlkQ+e5FIJLR582b95je/0cGDB/Xkk09qcHBQV1xh6/dPFtrN
+ou4SH8swLZ+9kKR9+/bp5ZdfVm9vr6666qpSjlgyfntx9uxZDQ4O6u6779aN
+N96oQ4cOKRqNXpY3bvP9N/LQQw/pyiuv1MqVK1VbW6tMJlPqUYsun73o7u5W
+a2urJOm2227TuXPnNDY2VtI5fwjy7cksi3GD4VIuXLjgVq5c6f79739P3YQZ
+HBycsaarq2vGTdtHH320mCOVTT57ceTIERcKhdzQ0FCZpiyNfPbiu+66667L
+9qZtPnvR19fnNm3a5JxzbnR01AWDQTc2NlaOcYsqn72477773Lvvvuuccy6d
+TrsVK1a4ycnJMkxbfMPDw5e8afvRRx/NuGnb2NiY12MWNfjO/fdu8s033+xC
+oZB76aWXnHPObd++3SWTSeecc99++63buHGju+mmm1xjY6P77LPPij1S2fjt
+xYYNG1xVVZVbvXq1W716tfvFL35RznGLym8vvutyDr5z/nsxOTnptm7d6urq
+6tyqVatcIpEo57hF5bcXx44dc7fffruLRCJu9erV7o9//GM5xy2atrY299Of
+/tRVVFS466+/3r3zzjvurbfecm+99ZZz7r9/J5599lkXCoXcqlWr8v73wUcr
+AIARtu50AIBhBB8AjCD4AGAEwQcAIwg+ABhB8AHACIIPAEb8P0OwP2xQZZWM
+AAAAAElFTkSuQmCC
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">102</span><span style=" color:#00ff00;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">102</span><span style=" color:#00ff00;">]:</span> x = [i for i in range(2, 11)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">103</span><span style=" color:#00ff00;">]:</span> plt.plot(x, errs[0])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[1])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[2])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.legend(['S', 'Spiral', 'QSpiral'])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">103</span><span style=" color:#ff0000;">]:</span> &lt;matplotlib.legend.Legend at 0x1c3025424e0&gt;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+nr6DuvXNVc1mWGfguxfBzVPlu88WTvD0qvu+5J+WkwUYOXLknX/PmXPvazuH
+Dx9+59eJiYkMHz6cpKQkiouL5YnyQlRhwdeCWRqylO5W3RlffwA2v44i2bgF
+Taf+RoNGTdWOJ2fg//Gf5WSXLVvGunXr2Lp1K3D3g4X/6SHD9evXv/PrmTNn
+MmPGDE6dOsX69espLCys2OBCiApx7OYx5h+aj31Te16xGkOrnX5kGTWk7sRf
+adzcSu14gKGdgT/gTLmi/NNysqdOneLHH39k0aJF/Pjjj3Tv3v2B+8rKyqJV
+q1YABAYGVmhuIUTFOJd2jlkHZmFtbs2bHWdisXkEWkxRxgRh0cpwfqo2rAJX
+yT8tJ7tz506Kiorw8vJCr9ezefPmB+5r6dKlvPjii7Rq1Qpvb2+uXLlSCV+B
+EKK8XM2+ytR9UzGrZcZyx9dotHEMxujIGr4dm/Z2ase7i0ZRFKWyDubh4UFk
+ZORd286dO4ednWF9KP9hY2NDZGSkqg85NuTPR4jq5lb+LcbuHku+Np+13VbT
+5PuJNNWlkfT8T9h27a1arnt1J8gZuBBCAJBVlMWUP6aQUZjBJz0+wvz7l7HU
+JXN5wHfYq1je9/PAScyEhAT69u2LnZ0dDg4OrF27Frg9VNCqVStcXV1xdXVl
+165dFR62ssXHx6t69i2EqBwFJQXM2D+Dq9lXWd19FQ02vUrbknguPP459t2f
+VjveP3rgGbiJiQkffvghbm5u5OTk4O7ujo+PDwBz5sxh/vz5FR5SCCEqilav
+Ze7BuZxMPcnK7u/S+KfldCo+S4zXh7hX8AMZyuqBBW5lZYWV1e1LZszNzbGz
+s+P69esVHkwIISqaXtHz5pE3OXL9CG91e4MW29fjXBhJhPMyug2cqHa8B3qk
+68Dj4+OJjo7Gy8sLgHXr1uHs7MyECRPIyMiokIBCCFERFEXhvYj32HVlF7Nc
+Z9Lu9+245R0mzHYe3Ybc+65rQ/PQBZ6bm8uQIUP4+OOPadCgAdOmTSMuLo6Y
+mBisrKyYN2/ePd8XEBCAh4cHHh4epKSklFtwIYQoi/Un17Pp/CbG2o3B8Ug4
+npm7CW09Ge9Ri9WO9tAeqsC1Wi1Dhgxh1KhR+Pr6AmBpaYmxsTFGRkZMnjyZ
+iIiIe77X39+fyMhIIiMjad68efklL0eJiYkMHjwYW1tb2rdvz4wZMygqKiI/
+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
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">104</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(100)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-104-c1e8aa33279e&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    errs = bpg.ErrorList(100)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Python\BestPathGrid.py&quot;</span>, line <span style=" color:#006400;">95</span>, in <span style=" color:#9400d3;">ErrorList</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    l[1].append(FindError(SpiralPath(i)))</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Python\BestPathGrid.py&quot;</span>, line <span style=" color:#006400;">82</span>, in <span style=" color:#9400d3;">FindError</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    eudist = Dist(path[i], path[j])</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  File </span><span style=" color:#00ff00;">&quot;D:\Python\BestPathGrid.py&quot;</span><span style=" color:#00ffff;">, line </span><span style=" color:#00ff00;">74</span><span style=" color:#00ffff;">, in </span><span style=" color:#ff00ff;">Dist</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    return ( (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2 )**0.5</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">KeyboardInterrupt</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">105</span><span style=" color:#00ff00;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">105</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(50)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-105-99f8c8f84a4b&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    errs = bpg.ErrorList(50)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;D:\Python\BestPathGrid.py&quot;</span>, line <span style=" color:#006400;">96</span>, in <span style=" color:#9400d3;">ErrorList</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    l[2].append(FindError(QSpiralPath(i)))</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  File </span><span style=" color:#00ff00;">&quot;D:\Python\BestPathGrid.py&quot;</span><span style=" color:#00ffff;">, line </span><span style=" color:#00ff00;">83</span><span style=" color:#00ffff;">, in </span><span style=" color:#ff00ff;">FindError</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    pdist = j-i</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">KeyboardInterrupt</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">106</span><span style=" color:#00ff00;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">106</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(10)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">107</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(20)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">108</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(30)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">109</span><span style=" color:#00ff00;">]:</span> errs = bpg.ErrorList(40)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">110</span><span style=" color:#00ff00;">]:</span> x = [i for i in range(2, 41)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">111</span><span style=" color:#00ff00;">]:</span> plt.plot(x, errs[0])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[1])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[2])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.legend(['S', 'Spiral', 'QSpiral'])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">111</span><span style=" color:#ff0000;">]:</span> &lt;matplotlib.legend.Legend at 0x1c30225f898&gt;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAXcAAAD4CAYAAAAXUaZHAAAACXBIWXMAAAsS
+AAALEgHS3X78AAAAOnpUWHRTb2Z0d2FyZQAACJnLTSwpyMkvyclMUihLLSrO
+zM8z1jPUM9BRyCgpKbDS18+Fy+vlF6XrAwCbzxDQcvcyHQAAIABJREFUeJzt
+3XlcVmX+//HXDRi47ygIigoqsoiKolkuEFammCvuKCjuqWXL/GpGaiqXxia/
+ZQvJGDZmk5iiiLapZSYabpWakYoKEiL7du/n94ff+E6J4MLNubn5PP8RD/fy
+PtdD3hyvc+7raBRFURBCCGFT7NQOIIQQouZJuQshhA2SchdCCBsk5S6EEDZI
+yl0IIWyQg9oBANq0aYOHh4faMYQQok5JT0/n+vXrlX7PKsrdw8OD1NRUtWMI
+IUSdEhgYeMvvybSMEELYICl3IYSwQVLuQghhg6xizr0yBoOBjIwMtFqt2lGs
+jpOTE25ubjRo0EDtKEIIK2W15Z6RkUHTpk3x8PBAo9GoHcdqKIpCbm4uGRkZ
+dO7cWe04QggrZbXTMlqtltatW0ux/4lGo6F169byPxohRJWsttwBKfZbkHER
+QlTHqstdCCFslVkx88q3fyezJNMiry/lXo1XXnkFHx8f/P39CQgI4MiRI2pH
+EkLYgFX7Y/j4/Cd8lPR3i7y+1Z5QtQaHDx8mKSmJ48eP4+joyPXr19Hr9WrH
+EkLUcUk/J7LlynZGFmuZ/MAii7yHlHsVsrKyaNOmDY6OjsCNNXCEEOJepOX9
+Qszhv+Kn1zHB71Xcuvpa5H1uq9w9PDxo2rQp9vb2ODg4kJqaSl5eHuHh4aSn
+p+Ph4cEnn3xCy5YtURSFJUuWkJycTKNGjfjggw/o06fPPYV8cddpzlwtuqfX
++LOers1YMcqnyscMHz6cl156iW7duvHQQw8RHh7OkCFDajSHEKL+KNQVMm/n
+dJqajUxvNIY+QyZY7L1ue859//79nDx5smKBr1WrVhESEkJaWhohISGsWrUK
+gD179pCWlkZaWhqxsbHMnz/fMslrQZMmTTh27BixsbG0bduW8PBwPvjgA7Vj
+CSHqIJPZxILtM8ijlOhSDx6ZutKi73fX0zKJiYkcOHAAgIiICIYOHcrq1atJ
+TExkxowZaDQaBgwYQEFBAVlZWbi4uNx1yOqOsC3J3t6eoUOHMnToUPz8/IiP
+j2fmzJmq5RFC1E2vfPVXftBdYF6+PWPmfoLGzrLXs9zWq2s0GoYPH07fvn2J
+jY0FIDs7u6KwXVxcuHbtGgCZmZm4u7tXPNfNzY3MzJsv9YmNjSUwMJDAwEBy
+cnLueUcs4dy5c6SlpVX8/eTJk3Tq1EnFREKIumjH6W1svbqLUUU6xo1LwKlR
+E4u/520duR86dAhXV1euXbtGaGgoPXr0uOVjFUW5aVtlH7qJjo4mOjoaqHpN
+YjWVlJSwePFiCgoKcHBwwNPTs+KXmxBC3I5z13/m70dfxF+vI7zPWtp39KqV
+972tcnd1dQXA2dmZMWPGcPToUdq1a1cx3ZKVlYWzszNw40j9ypUrFc/NyMio
+eH5d07dvX7777ju1Ywgh6qhCXSHzkmbQ3GxgRvPJ9Bo0qtbeu9ppmdLSUoqL
+iyu+/vzzz/H19SUsLIz4+HgA4uPjGT16NABhYWFs2rQJRVFISUmhefPm9zTf
+LoQQdZHRbGTep1MppIw55d0ZPnFFrb5/tUfu2dnZjBkzBgCj0ciUKVN45JFH
+6NevHxMnTiQuLo6OHTuydetWAEaMGEFycjKenp40atSIjRs3WnYPhBDCCq34
+7Bl+0l9iXr4jY+d/ZPETqH9Wbbl36dKFU6dO3bS9devWfPXVVzdt12g0rF+/
+vmbSCSFEHfThsTh2XvuCMYV6JobvwtGpUa1nkE+oCiFEDTpy5TvW/vgGQeU6
+pjwYS1tXD1VySLkLIUQNySzKYNmXC3AzGZjhvoQevYeqlkVWhRRCiBpQZihj
+9vZJoBiI0gxl8MiFquaRcq/GnSz5++6777Jp06Y7ev0PPviARYsssyqcEKJ2
+mBUzC7bP4KpSwNxiF0bPVP+8o0zLVOFOl/ydN29epduNRiMODjLUQtiqV7/8
+K8fKzxFVYMeE2duws7dXO5KUe1VuteSvh4cH4eHh7N+/H4CPPvoIT09PYmJi
+aNKkCcuXL2fo0KHcf//9HDp0iLCwMLp168bLL7+MXq+ndevWbN68mXbt2qm2
+b0KImpHwwxb+c3UnI4r1hI/ZRaMmzdWOBNSVct/zHPz2Y82+Zns/eHRVlQ+p
+asnfZs2acfToUTZt2sTSpUtJSkq66fkFBQV8/fXXAOTn55OSkoJGo2HDhg2s
+WbOGtWvX1uw+CSFq1amsE7x6/FV6a3VM67cOl07d1I5UoW6Uu0p+X/L34MGD
+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
+mzlzJp07d64Yv5MnT6qS73cmk4nevXszcuRIwILjp4hb6tSpk5KTk6N2jApf
+f/21cuzYMcXHx6di29NPP62sXLlSURRFWblypfLMM8+oFa/SfCtWrFBee+01
+1TL9t6tXryrHjh1TFEVRioqKFC8vL+X06dNWM4a3ymctY2g2m5Xi4mJFURRF
+r9cr/fv3Vw4fPqxMmDBB2bJli6IoijJ37lzl7bfftqp8ERERytatW1XJVJm1
+a9cqkydPVh577DFFURSLjZ8cudchgwcPplWrVn/YlpiYSEREBAARERHs2LFD
+jWhA5fmsiYuLC3369AGgadOmeHt7k5mZaTVjeKt81kKj0dCkSRMADAYDBoMB
+jUbDvn37GD9+PKDu+N0qnzXJyMhg9+7dzJ49G7hxW1JLjZ+UexU0Gg3Dhw+n
+b9++FTfztjbZ2dm4uLgAN8rh2rVrKie62VtvvYW/vz+RkZGqThv9t/T0dE6c
+OEFQUJBVjuF/5wPrGUOTyURAQADOzs6EhobStWtXWrRogYPDjVtDuLm5qfoL
+6c/5fh+/559/Hn9/f5YtW4ZOp1Mt39KlS1mzZg12djeqNzc312LjJ+VehUOH
+DnH8+HH27NnD+vXr+eabb9SOVOfMnz+f8+fPc/LkSVxcXHjqqafUjkRJSQnj
+xo3jjTfeoFmzZmrHucmf81nTGNrb23Py5EkyMjI4evQoZ8+evekxah4t/znf
+Tz/9xMqVK/n555/5/vvvycvLY/Xq1apkS0pKwtnZ+Q/XtCuVXIleU+Mn5V6F
+32/s7ezszJgxYzh69KjKiW7Wrl07srKyAMjKysLZ2VnlRH/Url077O3tsbOz
+Y86cOaqPocFgYNy4cUydOpWxY8dWZLSWMbxVPmsaQ4AWLVowdOhQUlJSKCgo
+wGg0AjemHX7/uVHT7/n27t2Li4sLGo0GR0dHZs2apdr4HTp0iJ07d+Lh4cGk
+SZPYt28fS5cutdj4SbnfQmlpKcXFxRVff/7553+4CsRahIWFER8fD0B8fDyj
+R49WOdEf/V6aANu3b1d1DBVFISoqCm9vb5588smK7dYyhrfKZy1jmJOTQ0FB
+AQDl5eV8+eWXeHt7M2zYMBISEgB1x6+yfD169KgYP0VR2LFjh2rjt3LlSjIy
+MkhPT+fjjz8mODiYzZs3W278auS0rA06f/684u/vr/j7+ys9e/ZUXn75ZbUj
+KZMmTVLat2+vODg4KB06dFA2bNigXL9+XQkODlY8PT2V4OBgJTc316ryTZs2
+TfH19VX8/PyUUaNGKVevXlUt38GDBxVA8fPzU3r16qX06tVL2b17t9WM4a3y
+WcsYnjp1SgkICFD8/PwUHx8f5cUXX1QU5cbPSr9+/ZSuXbsq48ePV7RarVXl
+GzZsmOLr66v4+PgoU6dOrbiiRk379++vuFrGUuMnyw8IIYQNkmkZIYSwQVLu
+Qghhg6TchRDCBkm5CyGEDZJyF0IIGyTlLoQQNkjKXQghbND/B2BjVg3v8jb7
+AAAAAElFTkSuQmCC
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">112</span><span style=" color:#00ff00;">]:</span> errs</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">112</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[[0.5285954792089683,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  1.6983581508756822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  3.524784032661239,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  6.01295314545433,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  9.165007259461895,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  12.982004028187426,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  17.464525499524665,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  22.612918325734,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  28.427401796754108,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  34.90812139498587,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  42.05517742962894,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  49.86864130291726,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  58.34856522115629,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  67.4949882380789,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  77.30794015069816,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  87.78744408799732,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  98.9335182770852,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  110.74617727624808,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  123.22543285369434,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  136.37129462531098,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  150.183770525151,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  164.66286715766512,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  179.80859006501092,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  195.62094393234628,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  212.09993274726673,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  229.2455599250012,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  247.05782840754645,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  265.5367407427869,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  284.68229914851656,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  304.4945055640495,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  324.97336169281624,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  346.11886903668795,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  367.93102892545454,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  390.4098425405487,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  413.5553109352474,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  437.3674350515371,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  461.84621573436635,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  486.99165374397256,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  512.8037497659946],</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> [0.5285954792089683,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  1.6983581508756822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  3.5247840326612385,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  6.01295314545433,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  9.165007259461897,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  12.982004028187424,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  17.464525499524665,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  22.612918325733887,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  28.42740179675433,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  34.90812139498593,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  42.05517742962887,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  49.8686413029172,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  58.34856522115604,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  67.49498823807926,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  77.30794015069822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  87.78744408799746,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  98.9335182770845,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  110.74617727624818,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  123.22543285369562,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  136.37129462530763,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  150.1837705251529,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  164.66286715767126,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  179.80859006501282,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  195.6209439323424,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  212.09993274727685,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  229.2455599250051,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  247.0578284075118,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  265.53674074279206,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  284.6822991485189,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  304.49450556409124,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  324.97336169282914,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  346.1188690366674,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  367.931028925425,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  390.40984254059765,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  413.5553109353511,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  437.3674350515867,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  461.8462157343988,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  486.9916537438315,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  512.803749765819],</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> [0.5285954792089683,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  1.6983581508756822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  3.7700140902635386,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  6.120285310831604,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  9.468322952943685,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  13.41045521055679,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  17.727687572129508,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  23.018713578271957,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  28.96782652354547,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  35.320592974832884,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  42.50739442330018,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  50.45838974136853,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  58.93335714655589,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  68.02268335081271,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  77.97458238623919,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  88.52620135143722,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  99.5201359760648,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  111.47208483155097,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  124.08422331036428,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  137.1057428903892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  150.95334890874392,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  165.5671975936892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  180.7223426795321,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  196.45912542355083,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  213.0818420933574,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  230.3240138732443,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  247.977256702961,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  266.5549821328037,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  285.84272536133284,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  305.59131524448065,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  326.06118766823386,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  347.34246352199364,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  369.20654937507084,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  391.5521759655807,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  414.8417923894412,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  438.7840441923427,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  463.1287105396581,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  488.3230054731663,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  514.2708111723895]]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">113</span><span style=" color:#00ff00;">]:</span> plt.plot(x, errs[0])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[1])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, errs[2])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.legend(['S', 'Spiral', 'QSpiral'])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">113</span><span style=" color:#ff0000;">]:</span> &lt;matplotlib.legend.Legend at 0x1c300c70ef0&gt;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAXcAAAD4CAYAAAAXUaZHAAAACXBIWXMAAAsS
+AAALEgHS3X78AAAAOnpUWHRTb2Z0d2FyZQAACJnLTSwpyMkvyclMUihLLSrO
+zM8z1jPUM9BRyCgpKbDS18+Fy+vlF6XrAwCbzxDQcvcyHQAAIABJREFUeJzt
+3XlcVmX+//HXDRi47ygIigoqsoiKolkuEFammCvuKCjuqWXL/GpGaiqXxia/
+ZQvJGDZmk5iiiLapZSYabpWakYoKEiL7du/n94ff+E6J4MLNubn5PP8RD/fy
+PtdD3hyvc+7raBRFURBCCGFT7NQOIIQQouZJuQshhA2SchdCCBsk5S6EEDZI
+yl0IIWyQg9oBANq0aYOHh4faMYQQok5JT0/n+vXrlX7PKsrdw8OD1NRUtWMI
+IUSdEhgYeMvvybSMEELYICl3IYSwQVLuQghhg6xizr0yBoOBjIwMtFqt2lGs
+jpOTE25ubjRo0EDtKEIIK2W15Z6RkUHTpk3x8PBAo9GoHcdqKIpCbm4uGRkZ
+dO7cWe04QggrZbXTMlqtltatW0ux/4lGo6F169byPxohRJWsttwBKfZbkHER
+QlTHqstdCCFslVkx88q3fyezJNMiry/lXo1XXnkFHx8f/P39CQgI4MiRI2pH
+EkLYgFX7Y/j4/Cd8lPR3i7y+1Z5QtQaHDx8mKSmJ48eP4+joyPXr19Hr9WrH
+EkLUcUk/J7LlynZGFmuZ/MAii7yHlHsVsrKyaNOmDY6OjsCNNXCEEOJepOX9
+Qszhv+Kn1zHB71Xcuvpa5H1uq9w9PDxo2rQp9vb2ODg4kJqaSl5eHuHh4aSn
+p+Ph4cEnn3xCy5YtURSFJUuWkJycTKNGjfjggw/o06fPPYV8cddpzlwtuqfX
++LOers1YMcqnyscMHz6cl156iW7duvHQQw8RHh7OkCFDajSHEKL+KNQVMm/n
+dJqajUxvNIY+QyZY7L1ue859//79nDx5smKBr1WrVhESEkJaWhohISGsWrUK
+gD179pCWlkZaWhqxsbHMnz/fMslrQZMmTTh27BixsbG0bduW8PBwPvjgA7Vj
+CSHqIJPZxILtM8ijlOhSDx6ZutKi73fX0zKJiYkcOHAAgIiICIYOHcrq1atJ
+TExkxowZaDQaBgwYQEFBAVlZWbi4uNx1yOqOsC3J3t6eoUOHMnToUPz8/IiP
+j2fmzJmq5RFC1E2vfPVXftBdYF6+PWPmfoLGzrLXs9zWq2s0GoYPH07fvn2J
+jY0FIDs7u6KwXVxcuHbtGgCZmZm4u7tXPNfNzY3MzJsv9YmNjSUwMJDAwEBy
+cnLueUcs4dy5c6SlpVX8/eTJk3Tq1EnFREKIumjH6W1svbqLUUU6xo1LwKlR
+E4u/520duR86dAhXV1euXbtGaGgoPXr0uOVjFUW5aVtlH7qJjo4mOjoaqHpN
+YjWVlJSwePFiCgoKcHBwwNPTs+KXmxBC3I5z13/m70dfxF+vI7zPWtp39KqV
+972tcnd1dQXA2dmZMWPGcPToUdq1a1cx3ZKVlYWzszNw40j9ypUrFc/NyMio
+eH5d07dvX7777ju1Ywgh6qhCXSHzkmbQ3GxgRvPJ9Bo0qtbeu9ppmdLSUoqL
+iyu+/vzzz/H19SUsLIz4+HgA4uPjGT16NABhYWFs2rQJRVFISUmhefPm9zTf
+LoQQdZHRbGTep1MppIw55d0ZPnFFrb5/tUfu2dnZjBkzBgCj0ciUKVN45JFH
+6NevHxMnTiQuLo6OHTuydetWAEaMGEFycjKenp40atSIjRs3WnYPhBDCCq34
+7Bl+0l9iXr4jY+d/ZPETqH9Wbbl36dKFU6dO3bS9devWfPXVVzdt12g0rF+/
+vmbSCSFEHfThsTh2XvuCMYV6JobvwtGpUa1nkE+oCiFEDTpy5TvW/vgGQeU6
+pjwYS1tXD1VySLkLIUQNySzKYNmXC3AzGZjhvoQevYeqlkVWhRRCiBpQZihj
+9vZJoBiI0gxl8MiFquaRcq/GnSz5++6777Jp06Y7ev0PPviARYsssyqcEKJ2
+mBUzC7bP4KpSwNxiF0bPVP+8o0zLVOFOl/ydN29epduNRiMODjLUQtiqV7/8
+K8fKzxFVYMeE2duws7dXO5KUe1VuteSvh4cH4eHh7N+/H4CPPvoIT09PYmJi
+aNKkCcuXL2fo0KHcf//9HDp0iLCwMLp168bLL7+MXq+ndevWbN68mXbt2qm2
+b0KImpHwwxb+c3UnI4r1hI/ZRaMmzdWOBNSVct/zHPz2Y82+Zns/eHRVlQ+p
+asnfZs2acfToUTZt2sTSpUtJSkq66fkFBQV8/fXXAOTn55OSkoJGo2HDhg2s
+WbOGtWvX1uw+CSFq1amsE7x6/FV6a3VM67cOl07d1I5UoW6Uu0p+X/L34MGD
+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
+mzlzJp07d64Yv5MnT6qS73cmk4nevXszcuRIwILjp4hb6tSpk5KTk6N2jApf
+f/21cuzYMcXHx6di29NPP62sXLlSURRFWblypfLMM8+oFa/SfCtWrFBee+01
+1TL9t6tXryrHjh1TFEVRioqKFC8vL+X06dNWM4a3ymctY2g2m5Xi4mJFURRF
+r9cr/fv3Vw4fPqxMmDBB2bJli6IoijJ37lzl7bfftqp8ERERytatW1XJVJm1
+a9cqkydPVh577DFFURSLjZ8cudchgwcPplWrVn/YlpiYSEREBAARERHs2LFD
+jWhA5fmsiYuLC3369AGgadOmeHt7k5mZaTVjeKt81kKj0dCkSRMADAYDBoMB
+jUbDvn37GD9+PKDu+N0qnzXJyMhg9+7dzJ49G7hxW1JLjZ+UexU0Gg3Dhw+n
+b9++FTfztjbZ2dm4uLgAN8rh2rVrKie62VtvvYW/vz+RkZGqThv9t/T0dE6c
+OEFQUJBVjuF/5wPrGUOTyURAQADOzs6EhobStWtXWrRogYPDjVtDuLm5qfoL
+6c/5fh+/559/Hn9/f5YtW4ZOp1Mt39KlS1mzZg12djeqNzc312LjJ+VehUOH
+DnH8+HH27NnD+vXr+eabb9SOVOfMnz+f8+fPc/LkSVxcXHjqqafUjkRJSQnj
+xo3jjTfeoFmzZmrHucmf81nTGNrb23Py5EkyMjI4evQoZ8+evekxah4t/znf
+Tz/9xMqVK/n555/5/vvvycvLY/Xq1apkS0pKwtnZ+Q/XtCuVXIleU+Mn5V6F
+32/s7ezszJgxYzh69KjKiW7Wrl07srKyAMjKysLZ2VnlRH/Url077O3tsbOz
+Y86cOaqPocFgYNy4cUydOpWxY8dWZLSWMbxVPmsaQ4AWLVowdOhQUlJSKCgo
+wGg0AjemHX7/uVHT7/n27t2Li4sLGo0GR0dHZs2apdr4HTp0iJ07d+Lh4cGk
+SZPYt28fS5cutdj4SbnfQmlpKcXFxRVff/7553+4CsRahIWFER8fD0B8fDyj
+R49WOdEf/V6aANu3b1d1DBVFISoqCm9vb5588smK7dYyhrfKZy1jmJOTQ0FB
+AQDl5eV8+eWXeHt7M2zYMBISEgB1x6+yfD169KgYP0VR2LFjh2rjt3LlSjIy
+MkhPT+fjjz8mODiYzZs3W278auS0rA06f/684u/vr/j7+ys9e/ZUXn75ZbUj
+KZMmTVLat2+vODg4KB06dFA2bNigXL9+XQkODlY8PT2V4OBgJTc316ryTZs2
+TfH19VX8/PyUUaNGKVevXlUt38GDBxVA8fPzU3r16qX06tVL2b17t9WM4a3y
+WcsYnjp1SgkICFD8/PwUHx8f5cUXX1QU5cbPSr9+/ZSuXbsq48ePV7RarVXl
+GzZsmOLr66v4+PgoU6dOrbiiRk379++vuFrGUuMnyw8IIYQNkmkZIYSwQVLu
+Qghhg6TchRDCBkm5CyGEDZJyF0IIGyTlLoQQNkjKXQghbND/B2BjVg3v8jb7
+AAAAAElFTkSuQmCC
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">114</span><span style=" color:#00ff00;">]:</span> runfile('D:/Python/BestPathGrid.py', wdir='D:/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline; color:#a52a2a;">Reloaded modules</span><span style=" color:#a52a2a;">: BestPathGrid</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">115</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">116</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(4)Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-116-a39c3ef6ab52&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    bpg.RowZigZagPath(4)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  File </span><span style=" color:#00ff00;">&quot;D:\Python\BestPathGrid.py&quot;</span><span style=" color:#00ffff;">, line </span><span style=" color:#00ff00;">102</span><span style=" color:#00ffff;">, in </span><span style=" color:#ff00ff;">RowZigZagPath</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    path.append((cx, cy))</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">KeyboardInterrupt</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">117</span><span style=" color:#00ff00;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">117</span><span style=" color:#00ff00;">]:</span> runfile('D:/Python/BestPathGrid.py', wdir='D:/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline; color:#a52a2a;">Reloaded modules</span><span style=" color:#a52a2a;">: BestPathGrid</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">118</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">119</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(4)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  File <span style=" color:#006400;">&quot;&lt;ipython-input-119-a39c3ef6ab52&gt;&quot;</span>, line <span style=" color:#006400;">1</span>, in <span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">    bpg.RowZigZagPath(4)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  File </span><span style=" color:#00ff00;">&quot;D:\Python\BestPathGrid.py&quot;</span><span style=" color:#00ffff;">, line </span><span style=" color:#00ff00;">103</span><span style=" color:#00ffff;">, in </span><span style=" color:#ff00ff;">RowZigZagPath</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    cx = cx + dx[i%4]</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">UnboundLocalError:</span> local variable 'i' referenced before assignment</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">120</span><span style=" color:#00ff00;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">120</span><span style=" color:#00ff00;">]:</span> runfile('D:/Python/BestPathGrid.py', wdir='D:/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline; color:#a52a2a;">Reloaded modules</span><span style=" color:#a52a2a;">: BestPathGrid</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">121</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">122</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(4)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">122</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[(0, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 3)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">123</span><span style=" color:#00ff00;">]:</span> len(bpg.RowZigZagPath(4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">123</span><span style=" color:#ff0000;">]:</span> 16</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">124</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(3)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">124</span><span style=" color:#ff0000;">]:</span> [(0, 0), (0, 1), (1, 1), (1, 0), (2, 0), (2, 1), (2, 2), (1, 2)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">125</span><span style=" color:#00ff00;">]:</span> len(bpg.RowZigZagPath(3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">125</span><span style=" color:#ff0000;">]:</span> 8</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">126</span><span style=" color:#00ff00;">]:</span> runfile('D:/Python/BestPathGrid.py', wdir='D:/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline; color:#a52a2a;">Reloaded modules</span><span style=" color:#a52a2a;">: BestPathGrid</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">127</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">128</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(3)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">128</span><span style=" color:#ff0000;">]:</span> [(0, 0), (0, 1), (1, 1), (1, 0), (2, 0), (2, 1), (2, 2), (1, 2), (0, 2)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">129</span><span style=" color:#00ff00;">]:</span> len(bpg.RowZigZagPath(3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">129</span><span style=" color:#ff0000;">]:</span> 9</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">130</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(5)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">130</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[(0, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (5, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (5, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (6, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (6, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (7, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (7, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (8, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (8, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (8, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (7, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (6, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (5, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 4)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">131</span><span style=" color:#00ff00;">]:</span> runfile('D:/Python/BestPathGrid.py', wdir='D:/Python')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline; color:#a52a2a;">Reloaded modules</span><span style=" color:#a52a2a;">: BestPathGrid</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">132</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">133</span><span style=" color:#00ff00;">]:</span> bpg.RowZigZagPath(5)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">133</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[(0, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 0),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 1),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 2),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 3),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (0, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (1, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (2, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (3, 4),</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> (4, 4)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">134</span><span style=" color:#00ff00;">]:</span> len(bpg.RowZigZagPath(5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">134</span><span style=" color:#ff0000;">]:</span> 25</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">135</span><span style=" color:#00ff00;">]:</span> import BestPathGrid as bpg</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">136</span><span style=" color:#00ff00;">]:</span> err = bpg.ErrorList(40)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">137</span><span style=" color:#00ff00;">]:</span> err</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">137</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[[0.5285954792089683,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  1.6983581508756822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  3.7700140902635386,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  6.120285310831604,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  9.468322952943685,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  13.41045521055679,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  17.727687572129508,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  23.018713578271957,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  28.96782652354547,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  35.320592974832884,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  42.50739442330018,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  50.45838974136853,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  58.93335714655589,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  68.02268335081271,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  77.97458238623919,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  88.52620135143722,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  99.5201359760648,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  111.47208483155097,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  124.08422331036428,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  137.1057428903892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  150.95334890874392,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  165.5671975936892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  180.7223426795321,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  196.45912542355083,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  213.0818420933574,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  230.3240138732443,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  247.977256702961,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  266.5549821328037,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  285.84272536133284,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  305.59131524448065,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  326.06118766823386,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  347.34246352199364,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  369.20654937507084,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  391.5521759655807,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  414.8417923894412,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  438.7840441923427,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  463.1287105396581,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  488.3230054731663,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  514.2708111723895],</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> [0.5285954792089683,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  1.6983581508756822,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  3.5247840326612376,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  6.012953145454328,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  9.1650072594619,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  12.982004028187426,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  17.464525499524665,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  22.61291832573397,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  28.427401796754108,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  34.908121394985905,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  42.05517742962892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  49.868641302917204,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  58.34856522115636,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  67.49498823807892,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  77.30794015069819,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  87.78744408799736,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  98.93351827708521,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  110.74617727624802,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  123.22543285369314,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  136.3712946253111,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  150.1837705251508,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  164.6628671576655,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  179.80859006501018,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  195.62094393234543,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  212.099932747269,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  229.2455599250028,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  247.0578284075466,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  265.5367407427869,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  284.68229914851565,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  304.4945055640517,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  324.973361692817,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  346.1188690366886,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  367.9310289254558,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  390.40984254054956,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  413.55531093524735,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  437.3674350515362,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  461.84621573436243,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  486.99165374396614,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  512.8037497660007]]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">138</span><span style=" color:#00ff00;">]:</span> plt.plot(x, err[0])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.plot(x, err[1])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">     ...:</span> plt.legend([&quot;QSpiral&quot;, &quot;RowZigZag&quot;])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">138</span><span style=" color:#ff0000;">]:</span> &lt;matplotlib.legend.Legend at 0x1c3c6cc3e10&gt;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+3kDyoYMU/vAVnXK20kfJoBId5+1CudBlJl73P4mPtYPWMYUQ9UDK3cTkFJfx
+4/c7qTj+NR3zv+UhJZ0qFM637MK5gKdp+9AoOti00jqmEKKeSbk3cqqqcvZS
+Hqf2b8E8ZRPBpd8RoeRdO9PFpgu/dJxA216jaOfgqXVUIUQDknJvhMr0Bg6f
+SuHS4Y3Ype8iVP8DPspVyrAk3fkB0gMH4hH6OO1aOGsdVQihESn3RuJCViEn
+k3egP72V9oUHeEA5B0CRzo4sz0ep7P44jgH98WlmrXFSIYQxkHI3UkVXKzj+
+04/kHd+OXcZuulQe5VHlKpXoyGgZyK8dZuDRfSC2Xt2w1em0jiuEMDJS7kbi
+SpmeEz8lk3tiJ9aZB+hUdowHlHwAcsxcyPQcwNWgP+PapT9trew0TiuEMHZS
+7hrJLrzCrycOUpSyD+uLB+hYdoweSiEAeTpHslqFcqV9Lzy79cfZtRPOclGR
+EOIOSLk3gKIyPWd+Pk3Ome/QpSfjUnScjlVnCVPKAcjROXOp1f3kt++FV7cI
+HF074ihlLoS4B1LudSyvpJxffjlN7tlDGDJ/wq7gJL76nwn53xRLBeZkWHXk
+rPNQmrfrgXtAb5xd2suRuRCiTkm536VKQxUXLudw6ZcjFJ8/glnWCRxLztCh
+KpUeSmn14y6Ze1Dg0pPiNqG4+j2IrXdX2sll/kKIeiblXouy8gounDtN7vkT
+lGX+jFn+WWxKUnGrTKe9kkf7/z3uKlZcat6BDMcB5Hh0oZVPd2zbdqG1ZUtk
+9XMhREOrl3LfsmULzz33HAaDgUmTJjFr1qz6eJl7pjdUkZ1fRG5mKiWXf6Ui
+5zxqYRoWJRm0LLuEg/4SrmoOHZXK6ucU04IsyzZkO/Qkx9mXlh5+uHUMoXmr
+DrSTUxKFEEaizsvdYDDwzDPPsG3bNjw9PQkNDSUyMpLOnTvX9UvVoK8o50pR
+PqXFBZSW5FNRUkBZSR7lBZcwFGehlGRjUZaDZUUeNpX52KsFuCsluP9hPzmK
+I/kWruTb+pFl44WFqy8OXv64tg/AxtYFG5kfF0IYuTov94MHD+Lj40P79tcm
+LEaOHEliYmK9lPsPaz6g9U8Laa6W0kItpblSgT1ws1s1F2NNoc6BUgsHrrTo
+QHFzZ9JautLMsQ0tXNvh4Naelq3a4GxhhVy4L4RozOq83DMyMvDy8qr+u6en
+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
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">139</span><span style=" color:#00ff00;">]:</span> len(err[0])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">139</span><span style=" color:#ff0000;">]:</span> 39</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">140</span><span style=" color:#00ff00;">]:</span> errdiff = [err[0][i] - err[1][i] for i in range(39)]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">141</span><span style=" color:#00ff00;">]:</span> plt.plot([x for x in range(39)], errdiff)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">141</span><span style=" color:#ff0000;">]:</span> [&lt;matplotlib.lines.Line2D at 0x1c3c6d2fe48&gt;]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAXQAAAD4CAYAAAD8Zh1EAAAACXBIWXMAAAsS
+AAALEgHS3X78AAAAOnpUWHRTb2Z0d2FyZQAACJnLTSwpyMkvyclMUihLLSrO
+zM8z1jPUM9BRyCgpKbDS18+Fy+vlF6XrAwCbzxDQcvcyHQAAIABJREFUeJzt
+3Xlc1OXeP/7XwLDv+zbI4iCyijIIronmscxQ0xQ1FbXQ8tznnE7f6nvu7mPW
+XSf7nVO/TlmnSHIPMkvhlHJKU1NkcRQ0xYVlZoAB2XccZvt8/yBJZJkZZmAW
+3s+/Yj7X55r3Y5KXH6+5FhbDMAwIIYQYPTN9F0AIIUQ3KNAJIcREUKATQoiJ
+oEAnhBATQYFOCCEmgq2vN3Z3d0dgYKC+3p4QQoySUChEY2PjoNf0FuiBgYHg
+8/n6entCCDFKPB5vyGs05EIIISaCAp0QQkwEBTohhJgICnRCCDERFOiEEGIi
+KNAJIcREUKATQoiJoEAnhJAx9MGpOygUNI9K3xTohBAyRsrqO/DBqVLkVzSN
+Sv8U6IQQMkb25gphyTbD2vgJo9I/BTohhIyBli4pvrlSjWUxvnC3txqV96BA
+J4SQMZBxqRISmRKbZweN2ntQoBNCyCiTKZQ4cFGEWVw3TPZ2HLX3oUAnhJBR
+dvL6Xdxtl2DzrNF7OgfUCPTNmzfD09MTkZGRw7a7dOkSzM3NcfToUZ0VRwgh
+Y4lhGLz9fQkui1p02u8XFwQIdLNFYqinTvt9mMpAT0lJQU5OzrBtFAoFXn31
+VSxatEhnhRFCyFg7e6cBn58X4O3vS3TW55XKFhRXtWLTrCCYmbF01u9gVAb6
+3Llz4erqOmybjz76CCtWrICn5+j+7UMIIaMp7VwFAOBKZSuuVOrmKf2LCwI4
+WLOxMpajk/6Go/UYulgsxrFjx7Bt2zaVbdPS0sDj8cDj8dDQ0KDtWxNCiM78
+Ut2GvIom/HFBCBys2Ui/INC6z5rWezh5/S6S4/xhZzX6B8RpHeh/+tOf8O67
+78Lc3Fxl29TUVPD5fPD5fHh4eGj71oQQojOf/VwOBys2np0ThLXTJ+DkL7Wo
+bunWqs/9eUIwDIMNMwJ1UqMqWgc6n89HcnIyAgMDcfToUbzwwgs4fvy4Lmoj
+hJAxUdXcjRO/1GJt/AQ4WFtg48xAsFgs7L8oHHGf3VI5MgoqsSjCG/6utror
+dhha/xtAIPjtnyUpKSlYsmQJli1bpm23hBAyZtIvCGDGYiFlViAAwNfZBouj
+fJBZWIU/PjoJ9iMYLvnmihjtEjm2jOJCooepfEJfs2YNZsyYgdu3b4PD4SA9
+PR2ffvopPv3007GojxBCRlVLlxRfXapCUowvfJxs+l7fMjsIHT1yHLlUpXGf
+SiWDvbkCRHOcEBvgostyh6Xyr52MjAy1O9u3b582tRBCyJg7lC/CPZkCqXOD
++70e4+8MXoAL9l4UYOPMQJhrMOXwXGkDKhq68MHqGLBYoztV8UG0UpQQMm5J
+ZArszxPikUkegy7Jf3ZOEKqa7+HHkrsa9fvFBQE8HaywOMpHR5WqhwKdEDJu
+HSsSo7FTiq0PPZ3ftzDcG/6uNhpNYbxT14HzpY3YMCMAluyxjVgKdELIuKRU
+Mvj8fAUi/RwxY6LboG3MzVjYNDMIl4QtuFrVqla/e3OFsGKbYc300dnzfDgU
+6ISQcenUzTpUNHQhde7EYce5V8X5w8FKvYVGhwtE+Jpfhaem+cFtlPY8Hw4F
+OiFkXEr7uQIcFxssjvQetp29FRvJ0/3x/S+1qGm9N2gbmUKJHVnX8dqx65jF
+dcdfFoeNRskqUaATQsady6IW8EUt2DI7CGxz1TG4cWYgGIbB/jzhgGstXVJs
+SC/EgTwRUucG44uUODhaW+i+aDVQoBNCxp20n8vhZGOBVTx/tdpzXGzxeJQP
+viyoRFePvO/1O3UdWPpxLi6LWvCPp6fgvxeHaTS9Udco0Akh40pFQyd+KKnD
++oQAjTbM2jI7CB0SOY5ergYAnCqpw/KPc3FPpkDm1oQx2U1RldHf/osQQgzI
+ngsCWJibYePMQI3umzbBBdMmOOOLXAE6e+T4xw+3EenrhLQNsf1WmOoTPaET
+QsaNli4pvrlcjRXT/ODhoPkslC2zgyFq6sbf/3MbS6J9cWTrDIMJc4Ce0Akh
+RqRdIsMHP5ZiRawfInydNL7/68tV6JErkTJzZBtmLYrwwmMR3oiZ4Iytc4PH
+dFm/OijQCSFGobbtHjbtvYRbdztQUtuGzNQZGt2vVDI4XFCJ6YGuCPV2GFEN
+bHMzfLo+dkT3jgUaciGEGLySmnYs+zgX4pZ7WBLtg/yKZlwXt2nUx/myRoia
+urEuYexXcI4VCnRCiEE7d6cBqz7LgxmLha+fn4G3l0fBztJc4yPiDuWL4G5v
+icdULCQyZhTohBCD9dWlSmzedwn+rrY49sIsTPZ27J0/HuePf1+twd02iVr9
+iFvv4fTNOqyO84cVW/VxmcaKAp0QYnAYhsF7P9zGq9/8gllcdxzZmgBvJ+u+
+65tnBUHJMNin5hFxGQWVYAC9bJg1lijQCSEGRSpX4qUjV/HRT2VYzfNH+kYe
+HB5aSu/vaovHIr3xZYGo38rNofrLvFSFBZM9wXEZm7M99YUCnRBiMBRKBlv2
+X8K3RWK8tHASdq2IgsUQe61smR2M9gdWbg7lPzfuorGzB+sSAkajZIOiMtA3
+b94MT09PREZGDnr98OHDiI6ORnR0NGbOnImrV6/qvEhCyPjw0616nC9txOtP
+huO/FoQMO887NuC3lZsKJTNku0P5Ivi72uCREI/RKNmgqAz0lJQU5OTkDHk9
+KCgI586dw7Vr1/DXv/4VqampOi2QEDJ+fHFBAF8na6xX82n62Tm9Kzd/LKkb
+9Pqdug4UCJqxLj4AZnrcNGusqAz0uXPnwtXVdcjrM2fOhItL76nWCQkJqK4e
+/p8/hBAymJKaduRVNGHDzEC1trQFgN+Fe4HjYoP0CxWDXj+cL4Il20ztXRWN
+nU7H0NPT0/H4448PeT0tLQ08Hg88Hg8NDQ26fGtCiJHbmyuAjYU5kuPUD1+2
+uRk2zeo9Iq74oSPiunrk+OaKGE9E+cDVzlLX5RoknQX6mTNnkJ6ejnfffXfI
+NqmpqeDz+eDz+fDwMP3xLEKIeho7e5BVXIMVsX5wttUsfFcPcURcVnENOnvk
+eGYcfBl6n04C/dq1a3j22WeRlZUFN7fBD1slhJChHM6vhFShxKZZmm+aZW/F
+xpr4CTjxSy3Evx4RxzAMDuQJEe7jiGkTnHVcreHSOtArKyvx1FNP4eDBg5g0
+aZIuaiKEjCM9cgUO5ouQGOqBiR72I+rj/t7m+3J7n9KvVLbg1t0OPJMQYHA7
+Io4mlbstrlmzBmfPnkVjYyM4HA7eeOMNyGQyAMC2bdvw5ptvoqmpCS+88EJv
+h2w2+Hz+6FZNCNGb1m4pnGwsdBaU312tRWNnDzbPHtmWtgDg52yDJ6J8kFlY
+hT8sCMGh/Eo4WLGxNMZXJzUaC5WBnpGRMez1PXv2YM+ePToriBBiuMSt9/Do
+e+ewMNwL///qGK3Pz2QYBl/kChDiaY/ZXHet+np2ThCyr9bg03Pl+P5aLdZM
+99foiDlTQCtFCSFqO5wvwj2ZAtlXa7Aj6zoYZugFPeooFDTjRk07Ns8O0vqJ
+P5rjjOmBrvj4TDmkCuW4+jL0Pgp0QohaeuQKfHWpCgvDvbDtkYk4XFCJ/+8/
+t7Xq84tcAVxsLbB8qp9Oatwyp3fYJj7IFSFeIzvEwpiNr3+PEEJG7MQvtWjq
+kmLDjADM5rqjXSLDv86Ww8nGAtsemahxf5VN3fihpA4vzJsIawvdbGn7aJgX
+1sZPwFM6+gvC2FCgE0LUciBPhGB3O8ya6A4Wi4X/XRqJDokcu07egqO1BdbG
+a7Y17b6LQpizWFifEKizGs3NWPjb8iid9WdsKNAJISpdF7ehqLIVO5aE9+2J
+Ym7GwvurpqBTIsNrx3+BgzUbT05Rb1ZJh0SGI/wqLIn26bfPOdEOjaETQlQ6
+kCeEjYU5VsRy+r1uYW6GT9bFIi7AFS9+VYwzt+rV6u9rfjU6e+RaTVUkA1Gg
+E0KG1dotRVZxDZZN9YOTjcWA6zaW5tiTwsNkHwdsO3QZhYLmYftTKHtPGuIF
+uCCaM35WcY4FCnRCyLC+5lejR67EhhlDTwN0tLbA/k3T4edigy37LuH9H27j
+eJEYV6ta0SGR9Wt7+mYdKpu76el8FNAYOiFkSEolg0MFIsQFuiDMx3HYtm72
+Vji0JR7bDl3G7jNlePDMCQ8HKwS72yHYww5Fla3wc7bB78K9Rrn68YcCnRAT
+0y6RwcGKrZOl+edKGyBq6sZLvwtVq72vsw2yfz8bPXIFKpu6UdHYhYqGLlQ0
+dELQ2IX/3KhDc5cUO58MV3vPc6I+CnRCTMjN2nYs/TgX/7s0AqvjtD/h/mCe
+CO72Vngswluj+6zY5gjxchh0cU+3VA4bHc07J/3RX5GEmAilksFrx36BVK7E
+lwWVWvdX2dSNM7frsTZ+AizZuosKW0vd/OuBDESBToiJ+IpfhSuVrYgLdMHV
+6jbcqevQqr9DBSKYsVhYO137J30yNijQCTEBTZ092HXyFuKDXPHJuliwzVj4
+5vLIz/eVyBQ4wq/CoggvWvhjRCjQCTEBfztxC109cry1LBIeDlaYF+qJY0Vi
+yBXKEfWXfbUGrd0ynS7LJ6OPAp0QI5df0YRvrlQjdW5w35eQK2M5qO/owfmy
+Ro37YxgGB/NEmORlj4RgV12XS0YRBTohRkwqV+J/jl8Hx8UG/zU/pO/1+ZM9
+4WJrgaMjGHYprmrFL+I2rB9nx7eZAgp0QozY5+crUFbfiTeXRsDG8repgJZs
+MyyN8cOPN+rQ1i0bpoeBDuaJYG/FxvJpHNWNiUFRGeibN2+Gp6cnIiMjB73O
+MAz+8Ic/gMvlIjo6GleuXNF5kYSQgaqau/Hh6VI8FuGN+ZMHrrpcGcuBVKHE
+v6/VqN2nuPUevrtWi6em+cF+nB3fZgpUBnpKSgpycnKGvH7y5EmUlpaitLQU
+aWlpeP7553VaICFkIIZhsCPrOthmLLyeFD5omwhfR0z2dtBo2OWt70pgZgY8
+NydYV6WSMaQy0OfOnQtX16G/GMnKysKGDRvAYrGQkJCA1tZW1NbW6rRIQkh/
+/7lxF2duN+DFhZPg42QzaBsWi4WVsRwUV7WirL5TZZ/n7jTg5PW7+H0iF/6u
+troumYwBrcfQxWIx/P39+37mcDgQi8WDtk1LSwOPxwOPx0NDQ4O2b03IuNTZ
+I8fO7BKE+TgiZWbgsG2XxvjB3IyFb64M/5TeI1dgZ/YNBLrZ4rm59HRurLQO
+9MFO/R7qm/HU1FTw+Xzw+Xx4eHho+9aEjEsf/HgHdR0SvL08UuUGVx4OVpg3
+yQPfXqmGQjnwd/W+PecFEDR24Y2lkbBi0z4rxkrrQOdwOKiqqur7ubq6Gr6+
+6h1DRQjRTFVzN/ZeFCI5bgKmTXBR656VsRzUtffgwhBz0qtbuvHRT6V4PNIb
+j0yiBy1jpnWgJyUl4cCBA2AYBvn5+XBycoKPj48uaiOEPORQgQgA8IcFXLXv
+mR/mCWdbiyG3Avjf70rAAgv/s2TwL1eJ8VA5L2nNmjU4e/YsGhsbweFw8MYb
+b0Am653Xum3bNixevBgnTpwAl8uFra0t9u7dO+pFEzIeSWQKHLlUhYVhXkN+
+EToYK7Y5kqb44qtLVWi7J+t3jNyZ2/X4z406vPJYKPyc1e+TGCaVgZ6RkTHs
+dRaLhY8//lhnBRFCBnfyei1aumVYP8xRcENZGcvBgTwRvr9Wi7XxvbsnSmS9
+X4QGe9jh2dn0RagpoJWihBiJg3kiBLvbYeZEN43vjfJzwiQv+36zXT7/uQKi
+pm68kRSh0/3Oif7Q/0VCjMB1cRuuVLZi3Qj3V2GxWFgxjYPLohZUNHSiqrkb
+u8+U4YkoH8wJoS9CTQUFOiFG4HCBCNYWZlipxf4qy6f6wYwFfHOlGm9+VwJz
+Mxb+Z0mYDqsk+kabNRBi4NruyXC8qAZLp/jBydZC9Q1D8HS0xiOTPLA3V4hu
+qQL/9/HJGn25SgwfPaETYuC+vVKNezLFiL4MfdiKWA66pQpM9LDD5llBOqiO
+GBJ6QidklMgUSoiaulHe0Imy+k6UN3SivL4TjZ1S/PfiMDwRrXq9BsMwOJgv
+Qoy/MyL9nLSu6dEwLyyJ9sHm2UH0RagJokAnRIckMgXe+PcNXBK2QNjYBfkD
+y+29Ha0x0dMOEpkSL31djGAPO4T5OA7bX155EyoauvDe01N0Up+1hTl2r52m
+k76I4aFAJ0SHjhWJkVFYhcRQDywM9wLXwx5cT3sEe9jBwbp3/Lu+Q4InP7qA
+bYcuI3v77GHHxQ/mi+Bsa6HW0zwhFOiE6AjDMPjiggARvo74IiVuyOmFng7W
++GRdLJLT8vCnr4qQvjEOZmYD29a1S/BDSR22zA6CtQVtmEVUo0E0QnTk59JG
+lNZ3YsvsIJVzxWMDXLBjSTjO3G7Ahz+VDtomo7ASCiWDdb+u7CREFQp0QnQk
+/YIAHg5WWBKt3m6jzyQE4Klpfvjn6VKcuVXf75pMoURGYSUemeSBADe70SiX
+mCAKdEJ0oLSuAz/facCGhAC1Z4+wWCz8bXkUwrwd8cfMIoiauvqunSqpQ117
+D9YnaD9VkYwfFOhkXJEplNhzvgKt3VKd9vtFrgBWbDOs0zCArS3M8dn6WLBY
+LGw9eBn3pAoAvV+G+jnbIHGyp07rJKaNAp2MK9nFNXjr+5v45+nBx61HorlL
+im+viPHUND+42llqfL+/qy0+XDMVt+s68Jdvr6GsvgMXy5uwNn4CzAf5spSQ
+oVCgk3GDYRh8fr4CQO8Xjk2dPTrp93C+CD1ypVYrLx+Z5IE/PzoJx4trkHrg
+MizMWVgd56/6RkIeQIFOxo2L5U24dbcDW+cGo0euxN5codZ99sgVOJAvwtxJ
+HgjxctCqr+2JXDwa5oWKxi48HukDd3srresj4wsFOhk3Pj9fAXd7S7y4cBIe
+j/TG/jwh2iUyrfr87motGjp6sGW29vuimJmx8P7qKXgmYQL+9GiI1v2R8YcC
+nYwLpXUdOHu7ARtmBMLawhwvzOOiQyLHwTzRiPtkGAbpFwQI8bTH3BB3ndTp
+aG2Bt5ZFIdjDXif9kfFFrUDPyclBaGgouFwudu3aNeB6ZWUlEhMTMXXqVERH
+R+PEiRM6L5QQbaRf+HUWyq+LdCL9nDAv1ANfXBD0zSzRVH5FM0pq27FZjYVE
+hIwFlYGuUCiwfft2nDx5EiUlJcjIyEBJSUm/Nm+99RZWrVqFoqIiZGZm4oUX
+Xhi1ggnRVGNnD74tEmNFLAduD4xLb0/koqlLisxLlSPqN/2CAC62Flg+1U9X
+pRKiFZWBXlhYCC6Xi+DgYFhaWiI5ORlZWVn92rBYLLS3twMA2tra4Our3ko5
+QsbCwTwRpIPMQokLdMX0IFek/VwBqVypUZ/Cxi6cvlWHdfEBtM8KMRgqA10s
+FsPf/7fpUxwOB2KxuF+bnTt34tChQ+BwOFi8eDE++uijQftKS0sDj8cDj8dD
+Q0ODlqUToppEpsChfBEWTPYE13PguPT2RC5q2yQ4VlQ9yN1D25srANuMhQ06
+OHSCEF1RGegMwwx47eHxwoyMDKSkpKC6uhonTpzA+vXroVQOfOJJTU0Fn88H
+n8+HhwcdTEtG3/EiMZq6pNgyZ/BZKHND3BHl54R/nS2HQjnwz/pg2u7J8PXl
+ajwZ7QtPR2tdlkuIVlQGOofDQVVVVd/P1dXVA4ZU0tPTsWrVKgDAjBkzIJFI
+0NjYqONSCdGMUslgz6/b2c4Idhu0DYvFwvbEiRA2deP7X2rV6jezsBLdUgU2
+62CqIiG6pDLQ4+LiUFpaCoFAAKlUiszMTCQlJfVrM2HCBJw+fRoAcPPmTUgk
+EnoCJ3p3rrQBZfWdeHbO8LNQfhfujYkedvjkTNmg/yJ9UEuXFPsvChEf5KqT
+I+EI0SWVgc5ms7F7924sWrQIYWFhWLVqFSIiIrBjxw5kZ2cDAN577z18/vnn
+mDJlCtasWYN9+/bRNC6id3vOV8Db0RpPRA3/Jb2ZGQsvzOPi1t0O/PTQNrb3
+KZQMDuWLkPjeWdR19OD387mjUTIhWmExqh5JRgmPxwOfz9fHW5NxoKSmHYs/
+PI9XH5uM5+dNVNleplAi8R9n4eFghW+fn9nvgYQvbMbr2Tdwo6YdCcGu2JkU
+gcnew58FSshoGS47aaUoMUl7LlTA1tIca6erd9qPhbkZtj4yEUWVrciraAIA
+1LdL8OevirHy0zw0d0nx0ZqpyHgugcKcGCw6U5QYFKWSAV/UAl6Ay6DnbKqj
+rl2Cf1+twbr4gGEPYH7Y07EcfHi6FB+dLsMNcTv+eboUUrkS2xMnYnsiF7aW
+9OtCDBs9oROD8v6Pd7DqszwcLhj5Hiv7LwohVzIab2drbWGO5+YEIa+iCW+f
+uInpQa744cW5eHnRZApzYhToTykxGNlXa7D7TBnMzVjIvFSF9TMCNe6jWyrH
+4YJKLAr3xgQ3W43vXxcfAFFTN+ZP9sSCMC+N7ydEn+gJnRiEa9WtePnrq4gL
+dMF/Lw7DjZp2XBe3adzPsSIx2u7JhlxIpIqdFRtvL4+iMCdGiQKd6F19uwSp
+By7D3d4K/3omFitjObBim2m8aRbDMNh/UYhIP0fwAlxGqVpCDBcFOtEriUyB
+5w5eRrtEhs838OBubwUnGws8EeWDrKIajba2zStvwp26TmycEUjrIMi4RIFO
+9IZhGPzl219wtaoV76+KQbjvb9MBV8f5o6NHjhNqLscHgH0XhXC1s8STU2i3
+TzI+UaATvfns5wocKxLjzwsn4bFI737Xpge5IsjdDl9dqhri7v6qmrtx6mYd
+kuP8aTtbMm5RoBO9OH2zDu/m3MIT0T74r0GW0bNYvafeFwqbUd7QqbK/Q/ki
+sFgsPJNA29mS8YsCnYy5O3Ud+GNmMSJ8HfGPlVOGHO9+apof2GYsHFHxlH5P
+qkDmpSosivCCr7PNaJRMiFGgQCdjqkMiw7P7+bC2MEfaeh5sLIceHvF0sMaC
+ME98c6V62BOFsop7pypuHMG8dUJMCQU6GVNfXapCZXM3Pl47Va2n6eS4CWjs
+lOKnW3WDXmcYBvsuCjHZ2wHTg1x1XS4hRoUCnYwZhZLBgTwReAEuiB/iwImH
+zZ3kAW9Ha2QOMexSIGjGrbsd2DSLpioSQoFOxszZ2/WobO5GyqxAte8xN2Nh
+FY+Dc3caUNN6b8D1/ReFcLa1wNIYPx1WSohxokAnY2bfRSG8Ha2xKMJbdeMH
+PM3rPaT8a37/g5zFrffwQ0kdVtNURUIAUKCTMVJW34nzpY14JmECLMw1+2Pn
+72qL2Vx3HOFX9TvI+VC+CAzDYD1NVSQEAAU6GSMH8oSwNDdDspoHTjxsdZw/
+xK33kFvWe/i4RKZAZmElFoZ7geOi+a6KhJgitQI9JycHoaGh4HK52LVr16Bt
+jhw5gvDwcERERGDt2rU6LZIYt3aJDEcvV+PJKb5wt7caUR8Lw73gYmvRt3I0
++2oNWrpl2DgzUIeVEmLcVO6HrlAosH37dvz444/gcDiIi4tDUlISwsPD+9qU
+lpbinXfeQW5uLlxcXFBfP/hBu2R8OsqvRrdUgRQtwteKbY6npnFwIE+Ips4e
+7L8oRKiXA2aoOVuGkPFA5RN6YWEhuFwugoODYWlpieTkZGRlZfVr8/nnn2P7
+9u1wcendstTT03N0qiVGR6lkcCBPiNgAF0RxnLTqa3WcP2QKBq8du44bNe3Y
+OJOmKhLyIJWBLhaL4e/v3/czh8OBWCzu1+bOnTu4c+cOZs2ahYSEBOTk5Aza
+V1paGng8Hng8HhoaGrQsnYwGhmFQUNGEK5UtEDV1oUMiA8Mwqm8cwrk7DRA2
+dWv1dH7fJC8HTJvgjJwbd+FozcayqbSrIiEPUjnkMtgv88NPRXK5HKWlpTh7
+9iyqq6sxZ84cXL9+Hc7Ozv3apaamIjU1FQDA4/G0qZuMkh9L6pB68HK/1yzZ
+ZnCzs4SrnSXc7K3g62SNPywIUWul596LQng5Wg3YTXGkkuMm4EplK1bH+dM5
+n4Q8ROVvBIfDQVXVb6v0qqur4evrO6BNQkICLCwsEBQUhNDQUJSWliIuLk73
+FZNRlX5BAD9nG7y1LBJNXVI0d/WgqVP6639L0dTZg0uCZpwvbcSXz8UjwM1u
+yL7KGzrx850GvLRwksZTFYeSFOMLUXMXNml4ADQh44HKQI+Li0NpaSkEAgH8
+/PyQmZmJL7/8sl+bZcuWISMjAykpKWhsbMSdO3cQHBw8akWT0VFS044CQTP+
+8vhkJE4e+nuQ6+I2rE8vwKrP8nD42QRwPe0HbXfgYu9UxTXxI5uqOBhrC3O8
+vGiyzvojxJSofGxis9nYvXs3Fi1ahLCwMKxatQoRERHYsWMHsrOzAQCLFi2C
+m5sbwsPDkZiYiL///e9wc6PZB8Zm30UBbCzMkRw3fABH+jkhM3UGFEpg9Wd5
+uFnbPqBNx69TFZdM8RnxVEVCiGZYjDbfeGmBx+OBz+fr463JIJq7pEh45zRW
+xnLwt+VRat1T0dCJdXsK0C1V4MDm6Zji/9t3JntzBXjj3yXI/v0sRHOch+mF
+EKKJ4bKTVooSAEBGYSWkciU2aTAbJdjDHke2zoCjDRvr9hTgkrAZwP2piiJM
+m+BMYU7IGKJANzJt3TK89V0J2rplOutTplDiYJ4Ic0LcEeLloNG9/q62OLJ1
+BjwdrLAhvRC5ZY04V9oAQWMXreIkZIxRoBuZ9FwB9lwQIP1Chc76zLl+F3fb
+JSOeK+7jZIOvts5AgJstNu27hLe/vwlPBys8HumjsxoJIapRoBsRiUyBw/ki
+AMD+PBG6euQ66XdvrgCBbrZIDB35Cl8PBytkPJeAUC8HlNV34pmEAFiy6Y8X
+IWOJfuOMSFaxGE1dUry8KBRt92RDnuKjiatVrbhS2YqNMwNhZqbdMnoXO0sc
+fi4e//NEGDbPpnnihIw1CnQjwTAM0i8IEObjiBfmTcT0QFekn6+ATDH04cnq
+2HdRCHsrNlbGcnRSp6O1BZ6dEwx7K1rFSchYo0A3EudLG3GnrhNbZgeBxWJy
+gLkAAAATxUlEQVRh27xg1LRJkF1cM+I+69sl+O5aDVbGcuBgbaHDagkh+kCB
+biTSLwjgbm+FJ6f0ftGYGOqJUC8HfPZzOZTKkS0lOFRQCbmS0cnGWYQQ/aNA
+NwJl9R04d6cBG2YEwIrde3Ymi8XC1keCcaeuE2dua77/fI9cgS8LREgM9USg
++9D7sRBCjAcFuhFIvyCEJdsM6x7aE+XJKb7wc7bBp+fKNe7zu6u1aOyUYtOs
+QB1VSQjRNwp0A9fcJcW3V6rx1FQ/uD20J4qFuRm2zA7CJWELLoua1e6TYRjs
+vSgA19Mes7nuui6ZEKInFOgG7ssCEXrkyiGnASZP94ezrQU+Paf+QqPLohZc
+F7cjhU78IcSkUKAbMKlciQO/LsmfNMSSfFtLNjbMCMSPJXUoq+9Qq9+9uUI4
+WrPx1DQ/XZZLCNEzCnQD9t21GtR39GCLikU6KTMDYW1hhs/UeEq/WN6InBt3
+sWb6BDrxhxATQ4FuoO4vJOJ62uORSR7DtnW1s8Rqnj+OF4tR23Zv0DbdUjle
+z7qOtZ8XwN/FhlZyEmKCKNANVIGgGTdq2rF5VpBa49zPzgmGkgG+uCAYcC2/
+ogmPfXAeB/JF2DQrECf/OBdejtajUTYhRI8o0HWsQyLDp+fKIZEptOon/YIA
+LrYWao9z+7vaYkm0D74sqOzbWrdbKsfO7BtITssHAGQ+l4DXn4yAjaW5VrUR
+QgwTDaLq2GfnKrD7TBnc7CzxNM9/RH0IG7tw6mYdts/jwtpC/fDdOncisopr
+cKhAhLhAV7x89CpETd1ImRmIVx4LpTFzQkycWk/oOTk5CA0NBZfLxa5du4Zs
+d/ToUbBYrHF7tFyHRIb9eUIAwPFi8Yj72XdRCLYZCxtmBGh0X7ivI+ZO8sDu
+n8qwOi0PSoZBxnMJ2JkUQWFOyDigMtAVCgW2b9+OkydPoqSkBBkZGSgpKRnQ
+rqOjAx9++CHi4+NHpVBjcCi/Eh0SOR4N88LF8ibcbZNo3EfbPRmO8KvwZLQv
+PEcwzv2H+VwolAzWJwQg549zMWMiHdZNyHihMtALCwvB5XIRHBwMS0tLJCcn
+Iysra0C7v/71r3jllVdgbT0+v2yTyBRIv1CBOSHueO2JMDAMkH1V86f0o5er
+0S1VjHgWCi/QFSVvLsKbSyNhR1vYEjKuqAx0sVgMf//fxoI5HA7E4v5BVVRU
+hKqqKixZsmTYvtLS0sDj8cDj8dDQ0DDCkg3TEX4VGjul2J7IRZC7HWL8nXGs
+SLOtbZVKBofyew9XjvRzGnEtbHP6rpuQ8Ujlbz7DDNya9cFpdEqlEi+++CLe
+e+89lW+WmpoKPp8PPp8PD4/h51YbE5lCic/OVWDaBGfEB7kCAJZP9cPN2nbc
+utuudj8XyhohaOzChhmBo1QpIcSUqQx0DoeDqqrfjjqrrq6Gr69v388dHR24
+fv065s2bh8DAQOTn5yMpKWlcfTGaXVwDces9bE/k9v1ltyTaB+ZmLBzX4Cn9
+YL4IbnaWeDzKe7RKJYSYMJWBHhcXh9LSUggEAkilUmRmZiIpKanvupOTExob
+GyEUCiEUCpGQkIDs7GzweLxRLdxQKJUM/nWuHJO9HTB/8m+HLLvZW+GRSR7I
+KhardQCFuPUeTt+sw+o4/749zwkhRBMqA53NZmP37t1YtGgRwsLCsGrVKkRE
+RGDHjh3Izs4eixoN2g8ldSir78Tz8yYOWNG5bKofatskKBCo3tr2cL4IALAu
+QbOpioQQcp9a0yAWL16MxYsX93vtzTffHLTt2bNntS7KWDAMg0/OliHAzRZP
+RPkMuL4wzAt2luY4XiQedvpgj1yBry5VYUGYF/ycbUazZEKICaPpEFrILWvC
+teo2bHtk4qAzS2wszfFYpA9O/FI77FYAJ3+5i6YuKdbT0zkhRAsU6Fr4+EwZ
+vBytht1vZflUP3T0yHH65tDnfh7IEyLI3Y5ODyKEaIUCfYSuVLYgr6IJz80J
+HvZLzBkT3eDlaIVjRYMvMroubsOVylY8kxAAMzM6PYgQMnIU6CP0yZlyONta
+YM30CcO2MzdjYWmMH87erkdzl3TA9UP5IlhbmGHlNM5olUoIGSco0Efg1t12
+nLpZh5SZgWotr18W4we5ksH3v9T2e72tW4bjxWIsi/GDk63FaJVLCBknKNBH
+4F9ny2FraY6UmYFqtQ/zcUColwOOPzTs8vXlKkhkSqzXcFdFQggZDAW6hqqa
+u/HvqzV4JiEAzraWat3DYrGwbKofLotaUNnUDaB3QdLhgkrEBrggwnfk+7YQ
+Qsh9FOga+ve1GigZYKOaT+f3LY3p3S7h/j7p9/dtoamKhBBdoUDX0Omb9Yjy
+c9J4AZCvsw0Sgl1xvEgMhmFwII/2bSGE6BYFugYaO3twpbIFj4Z5jej+5VP9
+UNHYhZPX7+KnW3VInk77thBCdIcCXQM/3aoHwwALwjxVNx7EY5E+sGSb4ZWj
+1wAAa+NpuIUQojsU6Bo4fbMOPk7WiPB1HNH9TjYWeDTME509ctq3hRCicxTo
+apLIFPj5TiMWhHkO2FVRE0/zek9/2jQrUEeVEUJILzp0Uk155U24J1OMePz8
+vsRQT+T9ZT58nOjpnBCiW+PuCb2svgMr/3URde0Sje47dbMOdpbmw26Dqy4K
+c0LIaBh3gX7il7vgi1pwIE+o9j0Mw+DUzTrMCfGgWSmEEIM17gK9QNAEAPiy
+oHLYPcofdF3cjrr2Hjwart1wCyGEjKZxFehSuRKXRS2I8HVES7cM2cXqHeB8
+6mYdzFhAYqjHKFdICCEjp1ag5+TkIDQ0FFwuF7t27Rpw/f3330d4eDiio6Ox
+YMECiEQinReqC9dr2iCRKfHCPC4mezvgi1wBGEb1Ac6nbtZh2gQXuNlbjUGV
+hBAyMioDXaFQYPv27Th58iRKSkqQkZGBkpKSfm2mTp0KPp+Pa9euYeXKlXjl
+lVdGrWBtFP56WPP0IFekzAzErbsdKg9wrmm9hxs17TTcQggxeCoDvbCwEFwu
+F8HBwbC0tERycjKysrL6tUlMTIStrS0AICEhAdXV1aNTrZYKBc0I9rCDh4MV
+lk31g7OtBfblCoe95/St3qPjtJ2uSAgho01loIvFYvj7+/f9zOFwIBYPfpwa
+AKSnp+Pxxx8f9FpaWhp4PB54PB4aGhpGUO7IKZQMLgmbER/kCgCwtjDHmukT
+8EPJXVQ1dw9536mSOgS62WKih91YlUoIISOiMtAHG2MeaqXkoUOHwOfz8fLL
+Lw96PTU1FXw+H3w+Hx4eY/sF46277eiQyDH910AHgPUJAWCxWDiUP/iYf1eP
+HHnlTXg0zEur1aGEEDIWVAY6h8NBVVVV38/V1dXw9fUd0O7UqVN4++23kZ2d
+DSsrw/vy8Lfx898WBvk62+CxCG9kFFaiWyofcM/50gZIFUoaPyeEGAWVgR4X
+F4fS0lIIBAJIpVJkZmYiKSmpX5uioiJs3boV2dnZ8PQc2U6Eo61Q0Aw/Z5sB
+G2KlzApEu0SOY0UDh5F+LKmHk40FeAEuY1UmIYSMmMpAZ7PZ2L17NxYtWoSw
+sDCsWrUKERER2LFjB7KzswEAL7/8Mjo7O/H0008jJiZmQODrG8MwKBT8Nn7+
+IF6ACyL9HLEvV9hveEmhZHDmdj0SQz3ANh9X0/UJIUZKrc25Fi9ejMWLF/d7
+7c033+z771OnTum2Kh0rb+hCU5e03/j5fSwWCykzg/B/vr6K3LImzA5xBwAU
+VbaguUuKBTS7hRBiJMbFo+f98fP44ME31loS7QM3O0vsuyjoe+3Hm3Vgm7Hw
+CK0OJYQYiXES6E3wcLBCoJvtoNetLcyxLn4CTt+qh6ipC0Dv2aEJwW5wtLYY
+y1IJIWTETD7QGYZBgaAZ04Nch516uC4hAOYsFvZfFEHQ2IWy+s4RHzVHCCH6
+YPIHXFS33ENtm2TQL0Qf5OVojSeiffA1vwpONr1P5bQ6lBBiTEz+Cf3B/VtU
+SZkZiI4eOT4+U4bJ3g7wdx18iIYQQgzRuAh0JxsLTPJ0UNl26gQXTPF3hlSh
+pOEWQojRMf1AFzYjLtAVZmbqLd1PnRMMFgt4PNJnlCsjhBDdMukx9Pp2CQSN
+XVg7fYLa9zwR7YPYgAXwdrIexcoIIUT3TPoJvUCD8fMHUZgTQoyRSQd6oaAZ
+tpbmiPB11HcphBAy6kw+0GMDXGgvFkLIuGCySdfSJcXtug6V888JIcRUmGyg
+XxIO3P+cEEJMmckGeqGgGZZsM0RznPRdCiGEjAnTDXRhM2L8nWFtYa7vUggh
+ZEyYZKB39shxXdxG4+eEkHHFJAP9sqgFSkbz+eeEEGLMTDLQCwVNMDdjYdoE
+OguUEDJ+qBXoOTk5CA0NBZfLxa5duwZc7+npwerVq8HlchEfHw+hUKjrOjVS
+KGhGlJ8T7KxMemcDQgjpR2WgKxQKbN++HSdPnkRJSQkyMjJQUlLSr016ejpc
+XFxQVlaGF198Ea+++uqoFayKRKbA1SoaPyeEjD8qH2ELCwvB5XIRHBwMAEhO
+TkZWVhbCw8P72mRlZWHnzp0AgJUrV+L3v/89GIYZ9oSgkTp3pwFvfVcy5HWp
+QgmpQknj54SQcUdloIvFYvj7+/f9zOFwUFBQMGQbNpsNJycnNDU1wd3dvV+7
+tLQ0pKWlAQAaGhpGVLC9FRshXvbDtpkR7IZZXPdh2xBCiKlRGegMwwx47eEn
+b3XaAEBqaipSU1MBADweT+0iHxQb4ILYgNgR3UsIIaZM5Rg6h8NBVVVV38/V
+1dXw9fUdso1cLkdbWxtcXWnIgxBCxpLKQI+Li0NpaSkEAgGkUikyMzORlJTU
+r01SUhL2798PADh69Cjmz58/KuPnhBBChqZyyIXNZmP37t1YtGgRFAoFNm/e
+jIiICOzYsQM8Hg9JSUnYsmUL1q9fDy6XC1dXV2RmZo5F7YQQQh7AYgYbAB8D
+PB4PfD5fH29NCCFGa7jsNMmVooQQMh5RoBNCiImgQCeEEBNBgU4IISZCb1+K
+uru7IzAwcET3NjQ0wMPDQ7cF6ZCh1wcYfo1Un3aoPu0Ycn1CoRCNjY2DXtNb
+oGvD0GfIGHp9gOHXSPVph+rTjqHXNxQaciGEEBNBgU4IISbCfOf9fW+NTGys
+YW/QZej1AYZfI9WnHapPO4Ze32CMcgydEELIQDTkQgghJoICnRBCTITRBbqq
+A6v1LTAwEFFRUYiJiRnxIR66tHnzZnh6eiIyMrLvtebmZixcuBAhISFYuHAh
+WlpaDKq+nTt3ws/PDzExMYiJicGJEyf0Vl9VVRUSExMRFhaGiIgI/POf/wRg
+OJ/hUPUZymcokUgwffp0TJkyBREREXj99dcBAAKBAPHx8QgJCcHq1ashlUoN
+qr6UlBQEBQX1fX7FxcV6qU9jjBGRy+VMcHAwU15ezvT09DDR0dHMjRs39F1W
+PwEBAUxDQ4O+y+hz7tw55vLly0xERETfay+//DLzzjvvMAzDMO+88w7zyiuv
+6Ku8Qet7/fXXmb///e96q+lBNTU1zOXLlxmGYZj29nYmJCSEuXHjhsF8hkPV
+ZyifoVKpZDo6OhiGYRipVMpMnz6dycvLY55++mkmIyODYRiG2bp1K/PJJ58Y
+VH0bN25kvv76a73UpA2jekJ/8MBqS0vLvgOrydDmzp074PSorKwsbNy4EQCw
+ceNGHD9+XB+lARi8PkPi4+ODadOmAQAcHBwQFhYGsVhsMJ/hUPUZChaLBXv7
+3jOAZTIZZDIZWCwWfvrpJ6xcuRKAfj+/oeozVkYV6IMdWG1If3iB3j8gv/vd
+7xAbG9t3ILahqaurg4+PD4DeQKivr9dzRQPt3r0b0dHR2Lx5s16HhB4kFApR
+VFSE+Ph4g/wMH6wPMJzPUKFQICYmBp6enli4cCEmTpwIZ2dnsNm95+vo+/f4
+4fruf36vvfYaoqOj8eKLL6Knp0dv9WnCqAKdUfMwan3Kzc3FlStXcPLkSXz8
+8cf4+eef9V2S0Xn++edRXl6O4uJi+Pj44KWXXtJ3Sejs7MSKFSvwwQcfwNHR
+Ud/lDPBwfYb0GZqbm6O4uBjV1dUoLCzEzZs3B7TR5+/xw/Vdv34d77zzDm7d
+uoVLly6hubkZ7777rt7q04RRBbo6B1br2/16PD09sXz5chQWFuq5ooG8vLxQ
+W1sLAKitrYWnp6eeK+rPy8sL5ubmMDMzw3PPPaf3z1Amk2HFihVYt24dnnrq
+qb4aDeUzHKo+Q/oMAcDZ2Rnz5s1Dfn4+WltbIZfLARjO7/H9+nJycuDj4wMW
+iwUrKyts2rTJID4/dRhVoKtzYLU+dXV1oaOjo++/f/jhh36zNwzFg4d679+/
+H0uXLtVzRf3dD0oAOHbsmF4/Q4ZhsGXLFoSFheHPf/5z3+uG8hkOVZ+hfIYN
+DQ1obW0FANy7dw+nTp1CWFgYEhMTcfToUQD6/fwGq2/y5Ml9nx/DMDh+/LhB
+/h4PSr/fyWru+++/Z0JCQpjg4GDmrbfe0nc5/ZSXlzPR0dFMdHQ0Ex4ebhD1
+JScnM97e3gybzWb8/PyYPXv2MI2Njcz8+fMZLpfLzJ8/n2lqajKo+p555hkm
+MjKSiYqKYp588kmmpqZGb/WdP3+eAcBERUUxU6ZMYaZMmcJ8//33BvMZDlWf
+oXyGV69eZWJiYpioqCgmIiKCeeONNxiG6f1diYuLYyZOnMisXLmSkUgkBlVf
+YmIiExkZyURERDDr1q3rmwlj6GjpPyGEmAijGnIhhBAyNAp0QggxERTohBBi
+IijQCSHERFCgE0KIiaBAJ4QQE0GBTgghJuL/ASRaOst94gvEAAAAAElFTkSu
+QmCC
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">142</span><span style=" color:#00ff00;">]:</span> errdiff</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">142</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[0.0,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.0,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.245230057602301,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.10733216537727586,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.30331569348178533,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.42845118236936486,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.2631620726048425,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.4057952525379882,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.5404247267913611,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.41247157984697935,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.45221699367125723,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.5897484384513234,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.5847919253995286,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.5276951127337952,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.6666422355410049,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.7387572634398651,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.5866176989795804,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.7259075553029533,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.8587904566711444,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.7344482650781003,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.7695783835931138,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.904330436023713,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.9137526145219113,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.838181491205404,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.9819093460884005,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.0784539482415028,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 0.9194282954144057,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.018241390016783,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.1604262128171854,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.0968096804289758,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.0878259754168766,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.2235944853050569,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.275520449615044,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.142333425031154,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.2864814541938472,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.4166091408065427,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.2824948052956415,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.3313517292001507,</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> 1.4670614063887797]</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">143</span><span style=" color:#00ff00;">]:</span> </p></body></html>
