@@ -14,7 +14,6 @@ def get_editors_of_article(article_name):
         pages = data['query']['pages']
 
         for page in pages:
-            print(url)
             for i in pages[page]['revisions']:
                 t = i.get("user")
                 if t is not None:
