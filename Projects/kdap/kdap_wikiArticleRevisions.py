@@ -14,10 +14,9 @@ def get_revisions_of_article(article_name):
         pages = data['query']['pages']
 
         for page in pages:
-            print()
-            print(i)
-            for i in pages[page]['revisions']:
-                revisions_list.append(i)
+            if 'revisions' in pages[page]:
+                for i in pages[page]['revisions']:
+                        revisions_list.append(i)
 
         if data.get('continue') is not None:
             url = url + '&rvcontinue=' + data['continue']['rvcontinue']
@@ -29,8 +28,7 @@ def get_revisions_of_article(article_name):
 
 
 '''
-start = time.time()
 d=get_revisions_of_article('Indian_Institute_of_Technology_Ropar')
-end=time.time()
-print(d['Indian_Institute_of_Technology_Ropar']))
+
+print(d['Indian_Institute_of_Technology_Ropar'])
 '''
