@@ -1,11 +1,11 @@
 from kdap_wikiArticleRevisions import get_revisions_of_article
 from wikiExtract import wikiExtract
-#import time
+import time
 
 
 def get_monthly_revision_count_by_category(category_name):
     w = wikiExtract()
-    category_dict = w.get_articles_by_category(category_name)
+    category_dict = w.get_articles_by_template(category_name)
     article_list = category_dict[category_name]
     monthly_revisions_dict = {}
     for article in article_list:
@@ -23,9 +23,8 @@ def get_monthly_revision_count_by_category(category_name):
     return monthly_revisions_dict
 
 
-'''
+
 s = time.time()
 d = get_monthly_revision_count_by_category('Black Lives Matter')
 e = time.time()
 print(e-s, d, sep='\n')
-'''
