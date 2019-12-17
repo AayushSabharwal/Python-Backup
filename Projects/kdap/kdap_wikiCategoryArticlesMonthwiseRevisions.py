@@ -23,8 +23,9 @@ def get_monthly_revision_count_by_category(category_name):
     return monthly_revisions_dict
 
 
-
+'''
 s = time.time()
 d = get_monthly_revision_count_by_category('Black Lives Matter')
 e = time.time()
 print(e-s, d, sep='\n')
+'''
